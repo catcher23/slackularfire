@@ -22,13 +22,15 @@ angular
       })
       .state('login', {
         url: '/login',
-        templateUrl: 'auth/login.html'
+        templateUrl: 'auth/login.html',
+        controller: 'AuthCtrl as authCtrl'
       })
       .state('register', {
         url: '/register',
-        templateUrl: 'auth/register.html'
+        templateUrl: 'auth/register.html',
+        controller: 'AuthCtrl as authCtrl'
       });
 
     $urlRouterProvider.otherwise('/');
   })
-  .constant('FirebaseUrl', 'https://slack.firebaseio.com/');
+  .constant('FirebaseUrl', 'https://slackularfire.firebaseio.com/');
