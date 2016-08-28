@@ -1,7 +1,6 @@
 # angularfire-slack
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+Slack clone built with Firebase and Angular
 
 ## Build & development
 

@@ -7,6 +7,8 @@ angular.module('angularfireSlackApp')
 
       self.updateProfile = function () {
         self.profile.emailHash = md5.createHash(auth.password.email);
-        self.profile.$save();
+        self.profile.$save().then(function() {
+          $state.go('channels');
+        });
       }
   }]);
